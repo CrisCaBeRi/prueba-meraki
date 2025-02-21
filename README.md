@@ -65,6 +65,7 @@ Este proyecto es una prueba técnica que implementa LitElement para crear una ap
 *   **Detalle y Transformaciones**: Al hacer clic en un Pokémon, se muestra su evolución o transformaciones.
 
 ## ️ API Simulada (src/db/pokemon.json) ️
+```
 {
   "pokemon": [
     {
@@ -79,6 +80,7 @@ Este proyecto es una prueba técnica que implementa LitElement para crear una ap
     }
   ]
 }
+```
 
 ## Mejoras Futuras
 * Agregar estilos con Tailwind o CSS.
