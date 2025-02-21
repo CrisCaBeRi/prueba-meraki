@@ -1,42 +1,47 @@
-Prueba Técnica - LitElement con JSON Server
+# Prueba Técnica - LitElement con JSON Server 
 
 Este proyecto es una prueba técnica que implementa LitElement para crear una aplicación web que consume una API de JSON Server. La aplicación lista Pokémon y muestra los detalles de sus transformaciones al hacer clic en cada uno.
 
-Tecnologías Utilizadas
+## ✨ Tecnologías Utilizadas ✨
 
-LitElement - Para la creación de componentes web.
+*   **LitElement**: Para la creación de componentes web.
+*   **JSON Server**: Para simular una API REST.
+*   **Fetch API**: Para consumir los datos desde JSON Server.
+*   **Node.js**: Para ejecutar JSON Server.
 
-JSON Server - Para simular una API REST.
+## ️ Instalación y Ejecución ️
 
-Fetch API - Para consumir los datos desde JSON Server.
+1.  **Clonar el Repositorio**
 
-Node.js - Para ejecutar JSON Server.
+    ```bash
+    git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/tu-usuario/nombre-del-repo.git)
+    cd nombre-del-repo
+    ```
 
-Instalación y Ejecución
+2.  **Instalar Dependencias**
 
-1. Clonar el Repositorio
+    ```bash
+    npm install
+    ```
 
-git clone https://github.com/tu-usuario/nombre-del-repo.git
-cd nombre-del-repo
+3.  **Iniciar JSON Server**
 
-2. Instalar Dependencias
+    ```bash
+    npx json-server src/db/pokemon.json --port 3000
+    ```
 
-npm install
+    Esto iniciará un servidor en `http://localhost:3000` con los datos de `src/db/pokemon.json`.
 
-3. Iniciar JSON Server
+4.  **Iniciar la Aplicación**
 
-npx json-server src/db/pokemon.json --port 3000
+    ```bash
+    npm run dev
+    ```
 
-Esto iniciará un servidor en http://localhost:3000 con los datos de src/db/pokemon.json.
+    Esto iniciará la aplicación en modo desarrollo.
 
-4. Iniciar la Aplicación
-
-npm run dev
-
-Esto iniciará la aplicación en modo desarrollo.
-
-Estructura del Proyecto
-
+##  Estructura del Proyecto
+```
 ├── src/
 │   ├── assets/
 │   ├── components/
@@ -45,22 +50,21 @@ Estructura del Proyecto
 │   ├── styles/
 │   ├── utils/
 │   ├── index.css
-│   ├── pokemon-app.js
+│   └── pokemon-app.js
 ├── public/
 ├── index.html
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
-├── README.md
+└── README.md
+```
 
-Funcionamiento
+## ⚙️ Funcionamiento ⚙️
 
-Listado de Pokémon: Se obtiene desde http://localhost:3000/pokemon.
+*   **Listado de Pokémon**: Se obtiene desde `http://localhost:3000/pokemon`.
+*   **Detalle y Transformaciones**: Al hacer clic en un Pokémon, se muestra su evolución o transformaciones.
 
-Detalle y Transformaciones: Al hacer clic en un Pokémon, se muestra su evolución o transformaciones.
-
-API Simulada (src/db/pokemon.json)
-
+## ️ API Simulada (src/db/pokemon.json) ️
 {
   "pokemon": [
     {
@@ -76,14 +80,10 @@ API Simulada (src/db/pokemon.json)
   ]
 }
 
-Mejoras Futuras
-
-Agregar estilos con Tailwind o CSS.
-
-Implementar un sistema de rutas.
-
-Conectar con una API real de Pokémon.
-
-Autor
-
+## Mejoras Futuras
+* Agregar estilos con Tailwind o CSS.
+* Implementar un sistema de rutas.
+* Conectar con una API real de Pokémon.
+‍
+# Autor ‍
 Cristian Camilo Betancourt Rincon - CrisCaBeRi
